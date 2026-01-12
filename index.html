@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anime Analysis Grid</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@100;300;400;500;700&family=Noto+Serif+SC:wght@200;300;400;500;600;700&family=Ma+Shan+Zheng&family=ZCOOL+Kuai+Le&family=Long+Cang&family=Zhi+Mang+Xing&family=Liu+Jian+Mao+Cao&family=ZCOOL+XiaoWei&display=swap');
+      
+      body {
+        font-family: 'Noto Serif SC', 'Inter', serif;
+        background-color: #fdfdfd;
+        color: #2c2c2c;
+      }
+      
+      /* Font Utility Classes */
+      .font-handwritten { font-family: 'Caveat', cursive; }
+      .font-kuaile { font-family: 'ZCOOL KuaiLe', sans-serif; }
+      .font-mashan { font-family: 'Ma Shan Zheng', cursive; }
+      .font-zhimang { font-family: 'Zhi Mang Xing', cursive; }
+      .font-longcang { font-family: 'Long Cang', cursive; }
+      .font-liujian { font-family: 'Liu Jian Mao Cao', cursive; }
+      .font-xiaowei { font-family: 'ZCOOL XiaoWei', serif; }
+      .font-serif-sc { font-family: 'Noto Serif SC', serif; }
+      .font-sans-sc { font-family: 'Noto Sans SC', sans-serif; }
+
+      .writing-vertical {
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+        letter-spacing: 0.2em;
+      }
+
+      /* Custom scrollbar for nicer look */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #e5e7eb;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #d1d5db;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
